@@ -201,6 +201,19 @@
     });
   }
 
+  function initMembershipPackages() {
+    var packageField = document.querySelector("#member-package");
+    var choices = document.querySelectorAll("[data-membership-package]");
+    if (!packageField || !choices.length) return;
+
+    Array.prototype.forEach.call(choices, function (choice) {
+      choice.addEventListener("click", function () {
+        packageField.value = choice.getAttribute("data-membership-package") || "";
+        packageField.dispatchEvent(new Event("input", { bubbles: true }));
+      });
+    });
+  }
+
   function initFilters() {
     var groups = document.querySelectorAll("[data-filter-group]");
     Array.prototype.forEach.call(groups, function (group) {
@@ -241,7 +254,7 @@
     });
   }
 
-  [initNav, initHeader, initReveal, initForms, initFilters, initYear].forEach(function (start) {
+  [initNav, initHeader, initReveal, initForms, initMembershipPackages, initFilters, initYear].forEach(function (start) {
     try {
       start();
     } catch (error) {
