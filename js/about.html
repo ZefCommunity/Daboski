@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Student Tech Community</title>
+  <meta name="description" content="Learn who we are, what we do, and how our student technology community builds things together.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">Student Tech Community</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="membership.html">Membership</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <h1>We learn to build by building together.</h1>
+          <p class="lead">
+            We are a community of students who share one goal: getting better at
+            technology by making real things, reviewing each other's work, and
+            helping each other grow.
+          </p>
+          <a class="button" href="membership.html">Join the community</a>
+        </div>
+
+        <figure class="hero-art">
+          <svg viewBox="0 0 520 220" role="img" aria-labelledby="graph-title graph-desc">
+            <title id="graph-title">Git branch diagram</title>
+            <desc id="graph-desc">Two feature branches split from the main branch and merge back into it.</desc>
+
+            <path class="line main" d="M20 110 H500" />
+            <path class="line branch-a" d="M100 110 C125 110 125 50 150 50 H250 C275 50 275 110 300 110" />
+            <path class="line branch-b" d="M200 110 C225 110 225 170 250 170 H380 C405 170 405 110 430 110" />
+
+            <circle class="dot main-dot" cx="20"  cy="110" r="7" />
+            <circle class="dot main-dot" cx="100" cy="110" r="7" />
+            <circle class="dot main-dot" cx="200" cy="110" r="7" />
+            <circle class="dot main-dot" cx="300" cy="110" r="7" />
+            <circle class="dot main-dot" cx="430" cy="110" r="7" />
+            <circle class="dot main-dot" cx="500" cy="110" r="7" />
+
+            <circle class="dot a-dot" cx="170" cy="50" r="6" />
+            <circle class="dot a-dot" cx="230" cy="50" r="6" />
+            <circle class="dot b-dot" cx="280" cy="170" r="6" />
+            <circle class="dot b-dot" cx="350" cy="170" r="6" />
+
+            <text x="190" y="30"  class="graph-label">feature/about-page</text>
+            <text x="270" y="200" class="graph-label">feature/events-page</text>
+            <text x="440" y="136" class="graph-label">main</text>
+          </svg>
+          <figcaption>Every page on this site started as a branch.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="section">
+      <div class="wrap two-col">
+        <h2>Why we exist</h2>
+        <div class="prose">
+          <p>
+            Learning to code from tutorials only goes so far. The skills that matter
+            most, like working with a team, reading someone else's code, and shipping
+            something people can use, only come from doing it.
+          </p>
+          <p>
+            Our community gives students a place to practise those skills together.
+            Beginners are welcome, and nobody is expected to know everything.
+            We ask questions, share what we learn, and review each other's work with
+            kindness.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What we do -->
+    <section class="section section-tint">
+      <div class="wrap">
+        <h2>What we do</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Learn</h3>
+            <p>Beginner-friendly courses and study sessions that cover HTML, CSS, Git, and more.</p>
+          </article>
+          <article class="card">
+            <h3>Build</h3>
+            <p>Hands-on projects where members design, code, and launch real websites and apps.</p>
+          </article>
+          <article class="card">
+            <h3>Connect</h3>
+            <p>Events, talks, and meetups where students meet each other and people working in tech.</p>
+          </article>
+          <article class="card">
+            <h3>Share</h3>
+            <p>A blog and project showcase where members write about what they have learned and made.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How we work -->
+    <section class="section">
+      <div class="wrap two-col">
+        <div>
+          <h2>How we work</h2>
+          <p class="muted">
+            We use the same workflow professional development teams use, so every
+            member leaves with experience that carries over to a real job.
+          </p>
+        </div>
+        <ol class="steps">
+          <li><strong>Clone</strong> the shared repository to your computer.</li>
+          <li><strong>Branch</strong> off main so your work stays separate.</li>
+          <li><strong>Build</strong> your page with HTML and CSS.</li>
+          <li><strong>Commit and push</strong> your changes with a clear message.</li>
+          <li><strong>Open a pull request</strong> and wait for review before it joins main.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section section-tint">
+      <div class="wrap">
+        <h2>What we value</h2>
+        <dl class="values">
+          <div>
+            <dt>Learning in the open</dt>
+            <dd>Mistakes are part of the process. We share them so everyone learns.</dd>
+          </div>
+          <div>
+            <dt>Respectful feedback</dt>
+            <dd>We review the work, not the person, and we say what is good as well as what to fix.</dd>
+          </div>
+          <div>
+            <dt>Everyone contributes</dt>
+            <dd>Every member builds something real, whatever their experience level.</dd>
+          </div>
+          <div>
+            <dt>Finishing things</dt>
+            <dd>We ship small, working pieces instead of leaving big ideas unfinished.</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="section cta">
+      <div class="wrap cta-inner">
+        <h2>Ready to build something with us?</h2>
+        <p>Become a member, or get in touch if you have questions first.</p>
+        <div class="cta-actions">
+          <a class="button" href="membership.html">See membership options</a>
+          <a class="button button-outline" href="contact.html">Contact us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; 2026 Student Tech Community. Built by students.</p>
+      <a href="#main">Back to top</a>
+    </div>
+  </footer>
+
+</body>
+</html>
