@@ -1,0 +1,166 @@
+g!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Student Technology Community</title>
+  
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Enable JS styling class -->
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container header-bar">
+      <a href="home.html" class="logo">TechCommunity</a>
+      
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="home.html" aria-current="page">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero reveal">
+      <div class="container hero-layout">
+        <div>
+          <p class="kicker">Welcome Students</p>
+          <h1>Build the Future Together</h1>
+          <p>Collaborate, code, and create innovative projects with fellow student technologists in a vibrant shared ecosystem.</p>
+          <div class="hero-actions">
+            <a href="#features" class="btn btn-primary">Explore Features</a>
+            <a href="#contact" class="btn btn-ghost">Get Involved</a>
+          </div>
+        </div>
+        
+        <!-- Stats Component -->
+        <div class="stats">
+          <div class="stat">
+            <strong>500+</strong>
+            <span>Active Coders</span>
+          </div>
+          <div class="stat">
+            <strong>35+</strong>
+            <span>Projects Built</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="reveal">
+      <div class="container">
+        <div class="section-head">
+          <p class="kicker">Community Pillars</p>
+          <h2>Why Join Our Tech Hub?</h2>
+          <p>Everything you need to level up your programming skills and collaborate effectively.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Version Control Mastery</h3>
+            <p>Learn Git, GitHub workflows, branching strategies, and collaborative pull requests hands-on.</p>
+          </article>
+          <article class="card">
+            <h3>Peer Code Reviews</h3>
+            <p>Gain valuable insights and constructive feedback from instructors and student peers alike.</p>
+          </article>
+          <article class="card">
+            <h3>Hackathons & Sprints</h3>
+            <p>Participate in fast-paced coding sessions to build real-world applications for your portfolio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Band -->
+    <section class="reveal">
+      <div class="container">
+        <div class="band">
+          <h3>Ready to publish your page?</h3>
+          <p>Follow the repository instructions, create your designated branch, and submit your pull request today.</p>
+          <a href="#contact" class="btn btn-ghost">Contact Lead Maintainer</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="reveal">
+      <div class="container split">
+        <div>
+          <p class="kicker">Get in Touch</p>
+          <h2>Have Questions?</h2>
+          <p>Reach out to the community coordinators if you encounter any issues with branches, git pulls, or deployments.</p>
+        </div>
+        <div>
+          <form class="form" action="#" method="POST">
+            <div class="form-row">
+              <label>Your Name
+                <input type="text" name="name" required placeholder="Jane Doe">
+              </label>
+              <label>Email Address
+                <input type="email" name="email" required placeholder="student@university.edu">
+              </label>
+            </div>
+            <label>Message
+              <textarea name="message" required placeholder="Tell us what you need help with..."></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="home.html" class="logo">TechCommunity</a>
+        <p>Empowering the next generation of student software engineers and web developers.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guidelines</h4>
+        <ul>
+          <li><a href="#">Branch Rules</a></li>
+          <li><a href="#">Pull Request Flow</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container legal">
+      <p>&copy; 2026 Student Technology Community. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
