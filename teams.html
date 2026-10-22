@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team - Student Technology Community</title>
+  
+  <!-- Shared Stylesheet & Core JS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-bar">
+      <a href="index.html" class="logo">TechComm</a>
+      
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html" aria-current="page">Team</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero Banner -->
+    <section class="hero container">
+      <p class="kicker">People Behind TechComm</p>
+      <h1>Meet Our Team</h1>
+      <p>We are student developers, designers, open-source contributors, and technology mentors building an inclusive technical community together.</p>
+    </section>
+
+    <!-- Leadership & Team Grid -->
+    <section class="container">
+      
+      <!-- Filter Controls (Wired to main.js via data-filter-group) -->
+      <div class="split" style="margin-bottom: 2rem; align-items: center;">
+        <div class="filters" data-filter-group aria-label="Team departments">
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">Everyone</button>
+          <button type="button" data-filter="leads" aria-pressed="false">Leads</button>
+          <button type="button" data-filter="dev" aria-pressed="false">Engineering</button>
+          <button type="button" data-filter="design" aria-pressed="false">Design & UX</button>
+          <button type="button" data-filter="mentors" aria-pressed="false">Mentors</button>
+        </div>
+
+        <!-- Live Search Bar -->
+        <div class="form" style="margin: 0;">
+          <label for="team-search" class="sr-only">Search Team Members</label>
+          <input type="search" id="team-search" placeholder="Search by name, role, or stack..." style="margin: 0;">
+        </div>
+      </div>
+
+      <!-- Team Grid -->
+      <div class="grid" id="team-grid">
+
+        <!-- Team Member 1 -->
+        <article class="card person reveal" data-category="leads">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Maya Lin portrait" loading="lazy">
+          <h3>Maya Lin</h3>
+          <p class="role">Community President</p>
+          <p class="muted">Computer Science '26 • Oversees tech workshops, open-source initiatives, and industry partnerships.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">Leadership</span>
+            <span class="pill">Python</span>
+            <span class="pill">DevOps</span>
+          </div>
+        </article>
+
+        <!-- Team Member 2 -->
+        <article class="card person reveal" data-category="dev">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Alex Chen portrait" loading="lazy">
+          <h3>Alex Chen</h3>
+          <p class="role">Frontend Tech Lead</p>
+          <p class="muted">Software Engineering '27 • Specializes in responsive Web UI, web accessibility, and React architecture.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">JavaScript</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">CSS</span>
+          </div>
+        </article>
+
+        <!-- Team Member 3 -->
+        <article class="card person reveal" data-category="design">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Sarah Jenkins portrait" loading="lazy">
+          <h3>Sarah Jenkins</h3>
+          <p class="role">Design System Lead</p>
+          <p class="muted">HCI & Interactive Media '26 • Creator of our community UI design kit, brand guidelines, and visual assets.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">Figma</span>
+            <span class="pill">UI/UX</span>
+            <span class="pill">Design Systems</span>
+          </div>
+        </article>
+
+        <!-- Team Member 4 -->
+        <article class="card person reveal" data-category="dev">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="David Kalu portrait" loading="lazy">
+          <h3>David Kalu</h3>
+          <p class="role">Backend Architecture Lead</p>
+          <p class="muted">Computer Engineering '26 • Maintains community API servers, database pipelines, and cloud hosting.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">Java</span>
+            <span class="pill">Spring Boot</span>
+            <span class="pill">PostgreSQL</span>
+          </div>
+        </article>
+
+        <!-- Team Member 5 -->
+        <article class="card person reveal" data-category="mentors">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Elena Rostova portrait" loading="lazy">
+          <h3>Elena Rostova</h3>
+          <p class="role">AI / ML Mentor</p>
+          <p class="muted">Data Science Masters '25 • Leads peer study circles on machine learning models and neural networks.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">PyTorch</span>
+            <span class="pill">Python</span>
+            <span class="pill">Deep Learning</span>
+          </div>
+        </article>
+
+        <!-- Team Member 6 -->
+        <article class="card person reveal" data-category="leads">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Marcus Vance portrait" loading="lazy">
+          <h3>Marcus Vance</h3>
+          <p class="role">Events & Hackathons Lead</p>
+          <p class="muted">Information Systems '27 • Coordinates weekend hackathons, guest speakers, and technical bootcamps.</p>
+          <div class="tag-row" style="margin-top: 0.8rem;">
+            <span class="pill">Events</span>
+            <span class="pill">Public Speaking</span>
+            <span class="pill">Agile</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Join the Team Callout -->
+    <section class="container" style="margin-top: 3.5rem;">
+      <div class="band">
+        <p class="kicker" style="color: #f0c9a0;">Get Involved</p>
+        <h2>Want to Join the Team?</h2>
+        <p>We are always looking for passionate students to help organize events, mentor peers, design UI, or write code for our open projects.</p>
+        <div class="hero-actions" style="margin-top: 1.2rem;">
+          <a href="#join-form" class="btn btn-primary">Apply as an Officer</a>
+          <a href="community.html" class="btn btn-ghost">Join Discord Community</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section class="container" id="join-form">
+      <div class="section-head">
+        <p class="kicker">Application</p>
+        <h2>Apply to Join</h2>
+        <p>Fill out the form below to share your skills and area of interest with our executive board.</p>
+      </div>
+
+      <form class="form card" action="#" style="max-width: 42rem;">
+        <div class="form-row">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="e.g. Jane Doe" required>
+          </label>
+          <label>
+            Student Email
+            <input type="email" name="email" placeholder="e.g. jdoe@university.edu" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Academic Year
+            <select name="year" required>
+              <option value="">Select Year...</option>
+              <option value="freshman">Freshman</option>
+              <option value="sophomore">Sophomore</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+              <option value="grad">Graduate Student</option>
+            </select>
+          </label>
+          <label>
+            Department Interest
+            <select name="department" required>
+              <option value="">Select Department...</option>
+              <option value="dev">Software Engineering</option>
+              <option value="design">UI/UX Design</option>
+              <option value="mentors">Academic / Mentorship</option>
+              <option value="events">Event Planning & Marketing</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          Tell us about yourself & your tech interests
+          <textarea name="bio" placeholder="What technologies or projects are you passionate about?" required></textarea>
+        </label>
+
+        <p class="form-note" role="status" style="display: none;"></p>
+
+        <button type="submit" class="btn btn-primary">Submit Application</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">TechComm</a>
+        <p style="margin-top: 0.8rem;">Empowering students through technology, collaboration, and practical learning.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="community.html">Community</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container legal">
+      <p>&copy; <span data-year>2026</span> Student Technology Community. Built collaboratively.</p>
+    </div>
+  </footer>
+
+  <!-- Instant Search Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var searchInput = document.getElementById("team-search");
+      if (!searchInput) return;
+
+      searchInput.addEventListener("input", function (e) {
+        var query = e.target.value.toLowerCase().trim();
+        var cards = document.querySelectorAll("#team-grid .person");
+
+        cards.forEach(function (card) {
+          var name = card.querySelector("h3") ? card.querySelector("h3").textContent.toLowerCase() : "";
+          var role = card.querySelector(".role") ? card.querySelector(".role").textContent.toLowerCase() : "";
+          var bio = card.querySelector(".muted") ? card.querySelector(".muted").textContent.toLowerCase() : "";
+          var tags = card.querySelector(".tag-row") ? card.querySelector(".tag-row").textContent.toLowerCase() : "";
+
+          var matches = name.includes(query) || role.includes(query) || bio.includes(query) || tags.includes(query);
+          card.style.display = matches ? "" : "none";
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
