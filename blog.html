@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Community Blog | Campus Tech Journal</title>
+    <meta
+      name="description"
+      content="Student technology community blog featuring innovation, campus stories, projects, and digital learning updates."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>document.documentElement.classList.add("js")</script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-bar">
+        <a href="index.html" class="logo" aria-label="Campus Tech Journal home">Campus Tech Journal</a>
+
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-layout">
+          <div class="reveal">
+            <p class="kicker">Student blog</p>
+            <h1>Stories that spark ideas and build community.</h1>
+            <p>
+              Explore practical lessons, creative breakthroughs, and student-led projects from the campus tech ecosystem.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#featured">Read the latest</a>
+              <a class="btn btn-ghost" href="#newsletter">Get updates</a>
+            </div>
+          </div>
+
+          <aside class="band reveal" aria-label="Weekly highlights">
+            <p class="kicker" style="color: #f0c9a0;">This week</p>
+            <h2 style="font-size: clamp(1.7rem, 2vw, 2.4rem);">Building with purpose</h2>
+            <p>
+              Students are turning ideas into products, from accessible tutoring tools to climate-tech prototypes developed in shared labs.
+            </p>
+            <div class="stats" aria-label="Community growth statistics">
+              <div class="stat">
+                <strong>120+</strong>
+                <span>student stories</span>
+              </div>
+              <div class="stat">
+                <strong>8</strong>
+                <span>editorial issues</span>
+              </div>
+              <div class="stat">
+                <strong>24</strong>
+                <span>new projects</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="featured" aria-labelledby="featured-heading">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="kicker">Featured</p>
+            <h2 id="featured-heading">From campus labs to real-world impact</h2>
+          </div>
+
+          <article class="post card reveal" style="padding: 1.2rem;">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              alt="Students collaborating around a laptop in a creative workspace"
+            />
+            <div class="tag-row" aria-label="Article tags">
+              <span class="pill">Innovation</span>
+              <span class="pill">Student teams</span>
+              <span class="pill">Community</span>
+            </div>
+            <h3>How student teams are turning classroom projects into launch-ready ideas</h3>
+            <p>
+              A behind-the-scenes look at the habits, experiments, and mentoring relationships that help early projects grow from prototypes into useful tools for real users.
+            </p>
+            <p class="meta">By Ada Okafor · 6 min read · October 18, 2026</p>
+            <a class="btn btn-ghost" href="#newsletter">Read the full feature</a>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="stories-heading">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="kicker">Explore</p>
+            <h2 id="stories-heading">Latest stories</h2>
+          </div>
+
+          <div class="filters reveal" data-filter-group>
+            <button type="button" class="is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="design" aria-pressed="false">Design</button>
+            <button type="button" data-filter="coding" aria-pressed="false">Coding</button>
+            <button type="button" data-filter="community" aria-pressed="false">Community</button>
+            <button type="button" data-filter="career" aria-pressed="false">Career</button>
+          </div>
+
+          <div class="grid">
+            <article class="card post reveal" data-category="design">
+              <img
+                src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=900&q=80"
+                alt="A designer sketching a digital interface"
+              />
+              <div class="tag-row">
+                <span class="pill">Design</span>
+              </div>
+              <h3>Designing interfaces that feel human, not just functional</h3>
+              <p>What accessibility, empathy, and feedback loops can teach product teams.</p>
+              <p class="meta">October 15 · 4 min read</p>
+            </article>
+
+            <article class="card post reveal" data-category="coding">
+              <img
+                src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80"
+                alt="Developer writing code on a laptop at a desk"
+              />
+              <div class="tag-row">
+                <span class="pill">Coding</span>
+              </div>
+              <h3>Three debugging habits that save hours during project deadlines</h3>
+              <p>Lean techniques for isolating issues and building more resilient workflows.</p>
+              <p class="meta">October 12 · 5 min read</p>
+            </article>
+
+            <article class="card post reveal" data-category="community">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80"
+                alt="Students listening to a speaker at a seminar"
+              />
+              <div class="tag-row">
+                <span class="pill">Community</span>
+              </div>
+              <h3>Why peer review circles are becoming a campus startup essential</h3>
+              <p>Student-led critique sessions are helping teams sharpen ideas before launch.</p>
+              <p class="meta">October 10 · 3 min read</p>
+            </article>
+
+            <article class="card post reveal" data-category="career">
+              <img
+                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+                alt="Students networking in a professional event"
+              />
+              <div class="tag-row">
+                <span class="pill">Career</span>
+              </div>
+              <h3>What internship stories teach us about building an early portfolio</h3>
+              <p>Practical advice on documenting projects, presenting evidence, and telling a clear story.</p>
+              <p class="meta">October 8 · 6 min read</p>
+            </article>
+
+            <article class="card post reveal" data-category="coding">
+              <img
+                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
+                alt="Team discussing a project on a large screen"
+              />
+              <div class="tag-row">
+                <span class="pill">Coding</span>
+              </div>
+              <h3>From concept to prototype: a student roadmap for product building</h3>
+              <p>How to move steadily from research questions to testable digital experiences.</p>
+              <p class="meta">October 5 · 7 min read</p>
+            </article>
+
+            <article class="card post reveal" data-category="design">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+                alt="Analytics dashboard on a monitor in a team workspace"
+              />
+              <div class="tag-row">
+                <span class="pill">Design</span>
+              </div>
+              <h3>Metrics that matter: tracking experience quality before the launch sprint</h3>
+              <p>Simple frameworks for using feedback and data to refine design decisions.</p>
+              <p class="meta">October 2 · 4 min read</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" aria-labelledby="community-heading">
+        <div class="container split">
+          <div class="reveal">
+            <p class="kicker" style="color: #f0c9a0;">Community</p>
+            <h2 id="community-heading">Campus innovation grows when everyone contributes.</h2>
+            <p>
+              From mentoring circles to design critiques and hack nights, our student network turns ideas into shared momentum.
+            </p>
+            <a class="btn btn-ghost" href="membership.html">Join the community</a>
+          </div>
+
+          <ul class="timeline reveal" aria-label="Key community moments">
+            <li>
+              <article>
+                <h3>Hack night highlights</h3>
+                <p>Students build prototype solutions for accessibility and sustainability.</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Mentor office hours</h3>
+                <p>Designers, developers, and founders share concrete feedback on launch plans.</p>
+              </article>
+            </li>
+            <li>
+              <article>
+                <h3>Open showcase</h3>
+                <p>Final-year teams present projects to peers, staff, and local partners.</p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="newsletter" aria-labelledby="newsletter-heading">
+        <div class="container split">
+          <div class="section-head reveal">
+            <p class="kicker">Newsletter</p>
+            <h2 id="newsletter-heading">Stay in the loop with weekly updates</h2>
+            <p>Fresh stories, project wins, and event invitations delivered to your inbox.</p>
+          </div>
+
+          <form class="form reveal" action="#" method="post">
+            <div class="form-row">
+              <label>
+                First name
+                <input type="text" name="first-name" placeholder="Your first name" required />
+              </label>
+              <label>
+                Email address
+                <input type="email" name="email" placeholder="name@example.com" required />
+              </label>
+            </div>
+            <label>
+              What are you most interested in?
+              <select name="topic">
+                <option value="">Select one</option>
+                <option value="projects">Student projects</option>
+                <option value="events">Campus events</option>
+                <option value="career">Career growth</option>
+                <option value="community">Community news</option>
+              </select>
+            </label>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="logo" aria-label="Campus Tech Journal home">Campus Tech Journal</a>
+          <p>
+            A collaborative student media and learning hub where ideas, projects, and community stories come together.
+          </p>
+        </div>
+
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="events.html">Events</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Connect</h3>
+          <ul>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container legal">
+        <p>© <span data-year></span> Campus Tech Journal. Built by students for students.</p>
+      </div>
+    </footer>
+  </body>
+</html>
