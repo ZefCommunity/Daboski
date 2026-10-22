@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore project ideas and learn how to build something with the student technology community.">
+    <title>Projects | Daboski</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-bar">
+        <a class="logo" href="#top">Daboski</a>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#projects" aria-current="page">Projects</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#start-project">Start a project</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-layout">
+          <div>
+            <p class="kicker">Ideas become better together</p>
+            <h1>Make something that matters.</h1>
+            <p>Explore ideas from our student tech community, find a problem you care about, and team up to build a solution.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">Explore project ideas</a>
+              <a class="btn btn-ghost" href="#start-project">Bring your own idea</a>
+            </div>
+          </div>
+          <aside class="band" aria-label="A note about our projects">
+            <p class="kicker">Start anywhere</p>
+            <h2>Curiosity is a good first step.</h2>
+            <p>Projects can begin as a sketch, a question, or a small experiment. You do not need a finished plan or a big team to get started.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">The project board</p>
+            <h2 id="projects-title">Ideas to explore</h2>
+            <p>These concepts are starting points, not finished projects. Pick one to develop or use them as inspiration for something new.</p>
+          </div>
+
+          <div class="filters" data-filter-group aria-label="Filter project ideas">
+            <button class="is-active" type="button" data-filter="all" aria-pressed="true">All ideas</button>
+            <button type="button" data-filter="web" aria-pressed="false">Web &amp; apps</button>
+            <button type="button" data-filter="community" aria-pressed="false">Community</button>
+            <button type="button" data-filter="hardware" aria-pressed="false">Hardware</button>
+          </div>
+
+          <div class="grid">
+            <article class="card reveal" data-category="web">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Web &amp; apps</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Campus Resource Hub</h3>
+              <p>Bring useful student resources into one searchable place, from study spaces to clubs and support services.</p>
+              <p class="meta">Try: HTML, CSS, JavaScript</p>
+            </article>
+
+            <article class="card reveal" data-category="community">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Community</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Skill-Swap Matchboard</h3>
+              <p>Help students find a learning partner by sharing a skill they can teach and one they would like to learn.</p>
+              <p class="meta">Try: research, interface design</p>
+            </article>
+
+            <article class="card reveal" data-category="hardware">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Hardware</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Smart Garden Monitor</h3>
+              <p>Experiment with a simple sensor that tracks plant conditions and shares helpful care reminders.</p>
+              <p class="meta">Try: sensors, prototyping</p>
+            </article>
+
+            <article class="card reveal" data-category="web">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Web &amp; apps</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Accessible Event Finder</h3>
+              <p>Make it easier to discover campus events with clear details about access, location, and what to expect.</p>
+              <p class="meta">Try: accessible design, web development</p>
+            </article>
+
+            <article class="card reveal" data-category="community">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Community</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Study Session Planner</h3>
+              <p>Create a lightweight way for classmates to organize focused study sessions and invite others to join.</p>
+              <p class="meta">Try: planning, collaboration</p>
+            </article>
+
+            <article class="card reveal" data-category="hardware">
+              <ul class="tag-row" aria-label="Project details">
+                <li><span class="pill">Hardware</span></li>
+                <li><span class="pill">Idea</span></li>
+              </ul>
+              <h3>Desk-Friendly Air Monitor</h3>
+              <p>Build a small prototype that measures indoor air quality and explains its readings in a student-friendly way.</p>
+              <p class="meta">Try: microcontrollers, data visualization</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" aria-labelledby="how-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="kicker">Small steps, real progress</p>
+            <h2 id="how-title">From first idea to first release</h2>
+            <p>Keep the first version simple. Learn as you go, share your progress, and invite others to contribute.</p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <h3>Choose a problem</h3>
+              <p>Find something you or your community would like to make easier, more useful, or more fun.</p>
+            </li>
+            <li>
+              <h3>Plan a small first version</h3>
+              <p>Write down who it is for and the one thing your first prototype should help them do.</p>
+            </li>
+            <li>
+              <h3>Build, test, and share</h3>
+              <p>Make a simple prototype, ask for feedback, and improve it with your collaborators.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="start-project" aria-labelledby="start-title">
+        <div class="container">
+          <div class="band split">
+            <div>
+              <p class="kicker">Your turn</p>
+              <h2 id="start-title">Have an idea of your own?</h2>
+              <p>Bring a question, a rough sketch, or a skill you want to practice. A project can start small and grow with the people who join it.</p>
+            </div>
+            <div>
+              <h3>Build in the open</h3>
+              <p>Use a branch for your work, make clear commits, and open a pull request so teammates can review and contribute.</p>
+              <a class="btn btn-ghost" href="README.md">Read the project workflow</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="logo" href="#top">Daboski</a>
+          <p>A student technology community learning by making things together.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#projects">Project ideas</a></li>
+            <li><a href="#how-it-works">How projects work</a></li>
+            <li><a href="#start-project">Start a project</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container legal">
+        <p>&copy; <span data-year></span> Daboski Student Technology Community</p>
+      </div>
+    </footer>
+  </body>
+</html>
